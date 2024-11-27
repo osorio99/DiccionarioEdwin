@@ -1,0 +1,304 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed";
+}
+
+header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  font-size: 1.3rem;
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 140, 255), rgb(0, 183, 255), rgb(178, 237, 255));
+  color: white;
+  z-index: 10;
+}
+
+#add {
+  margin: 0 1rem;
+  padding: 0.5rem 2.5rem;
+  border: 0.3rem solid rgb(255, 0, 170);
+  border-radius: 100px;
+  background-color: rgb(255, 0, 170);
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed";
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.translate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  z-index: 0;
+}
+select {
+  margin-top: 0.2rem;
+  margin-right: 0.3rem;
+  padding: 0.8rem 3rem;
+  border: 0.3rem solid rgb(0, 162, 255);
+  border-radius: 100px;
+  font-size: 1rem;
+}
+.searchAndAnswer {
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  font-size: 1.5rem;
+}
+.searchAndAnswer > div {
+  margin-left: 0.5rem;
+  padding-bottom: 12rem;
+  padding-top: 1rem;
+}
+#search {
+  padding: 0 0.6rem 0 0;
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed";
+  
+}
+#div-answer {
+  padding-bottom: 8rem;
+  padding-left: 1rem;
+  border-left: 0.2rem solid black;
+  border-right: none;
+}
+#answer {
+  width: 18rem;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  padding: 1rem 4rem;
+  border: 0.3rem solid rgb(255, 0, 170);
+  border-radius: 100px;
+  background-color: rgb(255, 0, 170);
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed";
+}
+
+button:hover {
+  background-color: rgb(255, 0, 170);
+  border-color: rgb(153, 4, 103);
+}
+#add:hover {
+  background-color: rgb(255, 0, 170);
+  border-color: rgb(153, 4, 103);
+}
+select:hover {
+  border-color:  rgb(255, 0, 170);
+}
+
+#section-allWords{
+  width: 50%;
+  display: flex;
+}
+#aside-Dictionary{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;    
+}
+#div-descriptions {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+  box-shadow: 0px 0px 5px 1px rgb(0, 183, 255);
+  border-radius: 1rem;
+}
+#div-descriptions > h4 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+#section-allWords > div {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  z-index: 1;
+}
+
+.form {
+  display: none;
+}
+.form > section {
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+  border: transparent;
+  box-shadow: 3px 3px 20px rgb(1, 74, 116);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%; 
+	top: 55%; 
+	transform: translate(-50%, -50%); 
+  z-index: 10;
+  background-color: rgba(1, 74, 116, 0.507);
+  color: rgb(255, 255, 255);
+}
+.form > section > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form > section > h3{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.form > section > div > aside > h4{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.form > section > div > aside > input {
+  padding: 0 1rem 0.6rem 0.7rem;
+  margin-bottom: 1rem;
+  border: 3px solid rgb(0, 162, 255);
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+#form-Example {
+  padding: 0 1rem 2rem 0.4rem;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  border: 3px solid rgb(0, 162, 255);
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+#close{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: rgb(255, 0, 0);
+}
+#close2{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: rgb(255, 0, 0);
+}
+#create-word {
+  margin-bottom: 1rem;
+}
+
+.error{
+  display: none;
+}
+.error > section{
+  margin-top: 2rem;
+  padding: 3rem 4rem;
+  border: transparent;
+  box-shadow: 3px 3px 20px rgb(255, 0, 170);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%; 
+	top: 50%; 
+	transform: translate(-50%, -50%); 
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+}
+.alert{
+  color: rgb(255, 0, 170);
+}
+.alert > span {
+  color: black;
+}
+
+footer{
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  background: linear-gradient(to left, rgb(0, 110, 255), rgb(0, 140, 255), rgb(0, 183, 255), rgb(178, 237, 255));
+  color: white;
+}
+
+@media screen and (max-width: 352px){
+  
+  header {
+    flex-direction: column-reverse;
+    position: static;
+    top: 0;
+  }
+  main {
+    flex-direction: column;
+  }
+  .translate{
+    margin-bottom: 1rem;
+    position: static;
+    top: 0;
+  }
+  #section-allWords{
+    width: 100%;
+    flex-direction: column;
+  
+  }
+  #section-allWords > div {
+    align-items: center;
+    justify-content: center;
+    position: static;
+    top: 0;
+    z-index: 0;
+  }
+  .searchAndAnswer {
+    flex-direction: column;
+  }
+  .searchAndAnswer > div {
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+    border-bottom: 0.2rem solid black;
+  }
+  .form > section {
+    padding: 2rem 1rem;
+    left: 50%; 
+    top: 50%; 
+    background-color: rgba(1, 74, 116, 0.897);
+  }
+  #alert{
+    text-align: center;
+  }
+  #div-answer {
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+    border: none;
+  }
+}

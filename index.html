@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>TRANSLATE</title>
+</head>
+<body>
+
+  <header>
+    <section class="insert">
+      <button id="add">New Word</button>
+    </section>
+    <h1>TRANSLATE</h1>
+  </header>
+
+  <main>
+    <!-- TRANSLATE -->
+    <section class="translate">
+
+      <!-- organice EN - ES -->
+      <aside>
+        <select name="" id="select-EN-ES">
+          <option value="EN-ES">English | | Spanish</option>
+          <option value="ES-EN">Español | | Ingles</option>
+        </select>
+      </aside>
+
+      <!-- search & translation -->
+      <aside class="searchAndAnswer">
+        <div>
+          <input type="text" value="" placeholder="ingrese la palabra..." id="search">
+        </div>
+        <div id="div-answer">
+          <h3 id="answer">digite una palabra...</h3>
+        </div>
+      </aside>
+
+      <!-- button -->
+      <aside>
+        <button id="translate">Traducir</button>
+      </aside>
+
+       <!--create register  -->
+      <aside class="form">
+        <section>
+          <span id="close">X</span>
+          <h3>crear una palabra</h3>
+          <select name="" id="create-word" >
+            <option value="animals">Animals - Animales</option>
+            <option value="fruits">Fruits - Frutas</option>
+            <option value="colors">Colors - Colores</option>
+            <option value="descriptions">Descriptions - Descripciones</option>
+            <option value="skills">Skills - Habilidades</option>
+            <option value="verbs">Verbs - Verbos</option>
+          </select>
+          <div>
+            <aside>
+              <h4>palabra español</h4>
+              <input id="form-Spanish" type="text" placeholder="word in Spanish..." >
+            </aside>
+
+            <aside>
+              <h4>palabra ingles</h4>
+              <input id="form-English" type="text" placeholder="word in English..." >
+            </aside>
+
+           <aside>
+            <h4>ejemplo</h4>
+            <input id="form-Example" type="text" placeholder="example...">
+           </aside>
+          </div>
+          <button id="form-btn"> Agregar </button>
+        </section>
+      </aside>
+
+      <aside class="error">
+        <section>
+          <span id="close2">X</span>
+          <h3 class="alert">¡<span id="alert"></span>!</h3>
+        </section>
+      </aside>
+
+    </section>
+
+    <!-- ALL WORDS -->
+    <section id="section-allWords">
+     
+      <div>
+      <!-- Categories -->
+      <aside>
+        <select name="" id="select-categories">
+          <option value="all">All - Todos</option>
+          <option value="animals">Animals - Animales</option>
+          <option value="fruits">Fruits - Frutas</option>
+          <option value="colors">Colors - Colores</option>
+          <option value="descriptions">Descriptions - Descripciones</option>
+          <option value="skills">Skills - Habilidades</option>
+          <option value="verbs">Verbs - Verbos</option>
+        </select>
+      </aside>
+
+      <!-- AZ - ZA -->
+      <aside>
+        <select name="" id="A-Z">
+          <option value="A-Z">A - Z</option>
+          <option value="Z-A">Z - A</option>
+        </select>
+      </aside>
+      </div>
+
+      <aside id="aside-Dictionary">
+      </aside>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <h2>David Toro & Esteban Osorio</h2>
+    <h2>ficha: 2901722</h2>
+  </footer>
+  <script type="module" src="script/app.js"></script>
+  <script type="module" src="script/dictionary.js"></script>
+  <script type="module" src="script/form.js"></script>
+</body>
+</html>
